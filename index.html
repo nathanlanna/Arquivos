@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/imagens/fficon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css"> 
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+
+    <title>projeto FFXII</title>
+
+
+</head>
+
+<body>
+    <div class="fundo video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/FFXII Video.mp4"  >
+        </video>
+    </div>
+    <Header class="cabecalho">
+        <a><img class='logo' src="./src/imagens/FFlogo.png" alt="logo ffxii"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Detalhes</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main class="container">
+        <div class="info">
+            <img src="./src/imagens/titulo.png" alt="titulo ffxii" class="titulo">
+            <p> A princesa Ashe de Dalmasca e o príncipe Rasler de Nabradia se casam em uma cerimônia arranjada enquanto o Império Archadiano avança contra os dois reinos. Rasler acaba morto na guerra e rei Raminas de Dalmasca é assassinado momentos depois de assinar um tratado de rendição. Anos depois Vaan e sua turma vão em busca de retomar Dalmasca ao que era.
+            </p>
+            <button class="botao-trailer">Veja o Trailer</button>
+        </div>
+        <img class="imagem" src="./src/imagens/esper.png" alt="imagem esper ffxii"></img>
+    <div class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar">X</span>
+            <iframe id="trailer" class="trailer" width="800" height="600"
+            src="./src/video/FFXII Video.mp4" title="Trailer Official" 
+            frameborder ="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+             gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
