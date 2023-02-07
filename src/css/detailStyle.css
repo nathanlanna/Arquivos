@@ -1,0 +1,122 @@
+body{
+    font-family: "Poppins";
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.cabecalho .logo{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav ul li a{
+    font-weight: bold;
+    color: #ffffff ;
+    font-size: 18;
+    padding: 2px 20px;
+    border-radius: 50px;
+    transition: 0.2s all ease-in-out;
+    margin: 5px;
+}
+.cabecalho nav li a:hover{
+    transform: scale(1.1);
+    background-color: #f54b07;
+}
+.fundo.video{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.fundo.video .video{
+    height: 100vh;
+    width: 100vW;
+    
+}
+.fundo.video::after{
+  content: '';
+  background-color: #07f5f5;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,1) 74%, rgba(0,0,0,1) 100%);
+
+}
+.personagem-nome{
+    color: whitesmoke;
+}
+p{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    height: calc(100vh - 167px);
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container .infoPersona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.container .personagem-fundo{
+    display: flex;
+    flex-direction: row-reverse;
+    height: calc(100vh - 167px);
+}
+.container .personagem-fundo .personagem-tag{
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all ease-out;
+    
+}
+.container .personagem-fundo .personagem-tag img{
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    border: #f54b07;
+    border-style: solid;
+    object-fit: cover;
+
+    transition: 0.2s all ease-out;
+
+}
+.container .personagem-fundo .personagem-tag img:hover{
+    transform: scale(1.1);
+    border-color: #f1db15;
+    cursor: pointer;
+}
+
+
+.container .personagem-fundo .personagem-image img{
+    height: 75vh;
+    object-fit: cover;    
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

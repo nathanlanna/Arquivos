@@ -3,7 +3,6 @@
 const botao = document.querySelector('.botao-trailer');
 const modal = document.querySelector('.modal');
 const video = document.querySelector('.trailer');
-console.log(video);
 // 2° mudar as propriedades de visibilidade e opacidade do video trailer
 
 botao.addEventListener('click', function(){
@@ -13,5 +12,5 @@ botao.addEventListener('click', function(){
 const fechar = document.querySelector('.fechar');
 
 fechar.addEventListener('click', function(){
-    modal.style.display = 'none'
-} )
+    modal.style.display = 'none';
+} );
